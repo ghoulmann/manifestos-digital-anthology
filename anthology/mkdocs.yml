@@ -1,0 +1,68 @@
+site_name: Anthology of Manifestos for the Digital Age
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+plugins:
+  - search:
+      lang: en
+  - tags:
+      tags_file: tags.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Preface: preface.md
+  - Network Timeline: network-timeline.md
+  - Manifestos:
+    - GNU Manifesto (1985): 1985-GNU-manifesto.md
+    - The Hacker Manifesto (1986): 1986.md
+    - Manifesto for the Unstable Media (1987): 1987-unstable-media.md
+    - Crypto Anarchist Manifesto (Timothy C. May, 1988): 1988.md
+    - CYBERFEMINIST MANIFESTO FOR THE 21ST CENTURY (VNS Matrix, 1991): 1991-cyber.md
+    - A Cypherpunk's Manifesto (Eric Hughes, 1993): 1993.md
+    - Manifesto for Bad Subjects in Cyberspace (1995): 1995.md
+    - A Declaration of the Independence of Cyberspace (John Perry Barlow, 1996): 1996.md
+    - A Cyberpunk Manifesto (Christian As. Kirtchev, 1997): 1997.md
+    - Lowtech Manifesto (1999): 1999-LowTech-manifest.md
+    - Hacktivismo Declaration (2001): 2001.md
+    - Agile Manifesto (2001): 2001-agile-manifesto.md
+    - A Cyberpunk Manifesto v2.0 (Christian As. Kirtchev, 2003): 2003.md
+    - The Wikileaks Manifesto (Julian Assange, 2006): assange.md
+    - A Cyberpunk Manifesto v3.0 (2007): 2007.md
+    - Avant-Pop Manifesto (2007): 2007-avant-pop.md
+    - Ubuntu Manifesto (2007): 2007-ubuntu-manifesto.md
+    - The Zero Dollar Laptop Manifesto (2007): 2007-Zero-Dollar-Laptop.md
+    - Guerilla Open Access Manifesto (Aaron Swartz, 2008): 2008.md
+    - The Lo-Fi Manifesto (2008): 2008-05-lo-fi-manifesto.md
+    - The Uppsala Declaration (2008): 2008-06-The-Uppsala-Declaration.md
+    - Glitch Studies Manifesto (2009): 2009-glitch-studies.md
+    - A Biopunk Manifesto (Meredith L. Patterson, 2010): 2010.md
+    - The Hardware Hacker Manifesto (Cody Brocious, 2010): hardware-hacker.md
+    - A Cyberpunk Manifesto (Transceiverfreq, 2011): 2011.md
+    - ONE HALF A MANIFESTO (Jaron Lanier, 2011): lanier.md
+    - The Bitcoin Manifesto (2011): 2011-Bitcoin-Manifesto.md
+    - A CryptoParty Manifesto (2012): 2012-10-03-cryptoparty.md
+    - The Open Source Everything Manifesto (Robert David Steele, 2013): 2013.md
+    - The European Pirate Party Manifesto (2013): 2013-09-EPP-manifesto.md
+    - Bill Of Computer Users Rights (2013): 2013-10-04-computer-users-rights.md
+    - The Critical Engineering Manifesto (CE Working Group, 2011-2014): 2014.md
+    - Balconism (2014): 2014-03-balconism.md
+    - the cybertwee manifesto (2014): 2014-10-cybertwee.md
+    - A Privacy Engineer's Manifesto (2014): privacy.md
+    - Art After Failure (2015): 2015-art-after-failure.md
+    - Critical Interface Manifesto Work in Progress (2015): 2015-01-21-Critical-Interface-Manifesto.md
+    - New Clues (Searls and Weinberger, 2015): 2015newclues.md
+    - Happy Hacking Manifesto (2015): happy-hacking.md
+    - Anti-Sec Manifesto: anti-sec.md
+    - The Underground Myth (Published in Phrack): underground-myth.md
+    - A Hacker Manifesto [Version 4.0] (McKenzie Wark): wark.md
+    - <THE::CYBER.COM/MUNIST::MANIFESTO\> (Richard Barbrook): cybercommunist.md
+  - Reference:
+    - Authors: authors.md
+    - Additional Resources: additional.md
+    - Index: tags.md
+
