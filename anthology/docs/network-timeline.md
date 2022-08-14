@@ -4,7 +4,7 @@ Computer Networking Timeline
 Internet Adoption
 -----------------
 
-![image](_static/adoption.jpg)
+![image](adoption.jpg)
 
 Internet Timeline
 -----------------
