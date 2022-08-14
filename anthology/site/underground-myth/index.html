@@ -1,0 +1,1440 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
+    
+    
+      
+        <title>The Underground Myth (Published in Phrack) - Anthology of Manifestos for the Digital Age</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.69437709.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-underground-myth-published-in-phrack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Anthology of Manifestos for the Digital Age" class="md-header__button md-logo" aria-label="Anthology of Manifestos for the Digital Age" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Anthology of Manifestos for the Digital Age
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Underground Myth (Published in Phrack)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Anthology of Manifestos for the Digital Age" class="md-nav__button md-logo" aria-label="Anthology of Manifestos for the Digital Age" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Anthology of Manifestos for the Digital Age
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preface/" class="md-nav__link">
+        Preface
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network-timeline/" class="md-nav__link">
+        Network Timeline
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Manifestos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Manifestos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Manifestos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1985-GNU-manifesto/" class="md-nav__link">
+        GNU Manifesto (1985)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1986/" class="md-nav__link">
+        The Hacker Manifesto (1986)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1987-unstable-media/" class="md-nav__link">
+        Manifesto for the Unstable Media (1987)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1988/" class="md-nav__link">
+        Crypto Anarchist Manifesto (Timothy C. May, 1988)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1991-cyber/" class="md-nav__link">
+        CYBERFEMINIST MANIFESTO FOR THE 21ST CENTURY (VNS Matrix, 1991)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1993/" class="md-nav__link">
+        A Cypherpunk's Manifesto (Eric Hughes, 1993)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1995/" class="md-nav__link">
+        Manifesto for Bad Subjects in Cyberspace (1995)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1996/" class="md-nav__link">
+        A Declaration of the Independence of Cyberspace (John Perry Barlow, 1996)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1997/" class="md-nav__link">
+        A Cyberpunk Manifesto (Christian As. Kirtchev, 1997)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1999-LowTech-manifest.md" class="md-nav__link">
+        Lowtech Manifesto (1999)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2001/" class="md-nav__link">
+        Hacktivismo Declaration (2001)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2001-agile-manifesto/" class="md-nav__link">
+        Agile Manifesto (2001)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2003/" class="md-nav__link">
+        A Cyberpunk Manifesto v2.0 (Christian As. Kirtchev, 2003)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assange/" class="md-nav__link">
+        The Wikileaks Manifesto (Julian Assange, 2006)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2007/" class="md-nav__link">
+        A Cyberpunk Manifesto v3.0 (2007)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2007-avant-pop/" class="md-nav__link">
+        Avant-Pop Manifesto (2007)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2007-ubuntu-manifesto/" class="md-nav__link">
+        Ubuntu Manifesto (2007)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2007-Zero-Dollar-Laptop/" class="md-nav__link">
+        The Zero Dollar Laptop Manifesto (2007)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2008/" class="md-nav__link">
+        Guerilla Open Access Manifesto (Aaron Swartz, 2008)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2008-05-lo-fi-manifesto/" class="md-nav__link">
+        The Lo-Fi Manifesto (2008)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2008-06-The-Uppsala-Declaration/" class="md-nav__link">
+        The Uppsala Declaration (2008)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2009-glitch-studies/" class="md-nav__link">
+        Glitch Studies Manifesto (2009)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2010/" class="md-nav__link">
+        A Biopunk Manifesto (Meredith L. Patterson, 2010)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware-hacker/" class="md-nav__link">
+        The Hardware Hacker Manifesto (Cody Brocious, 2010)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2011/" class="md-nav__link">
+        A Cyberpunk Manifesto (Transceiverfreq, 2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lanier/" class="md-nav__link">
+        ONE HALF A MANIFESTO (Jaron Lanier, 2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2011-Bitcoin-Manifesto/" class="md-nav__link">
+        The Bitcoin Manifesto (2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2012-10-03-cryptoparty/" class="md-nav__link">
+        A CryptoParty Manifesto (2012)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2013/" class="md-nav__link">
+        The Open Source Everything Manifesto (Robert David Steele, 2013)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2013-09-EPP-manifesto/" class="md-nav__link">
+        The European Pirate Party Manifesto (2013)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2013-10-04-computer-users-rights/" class="md-nav__link">
+        Bill Of Computer Users Rights (2013)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2014/" class="md-nav__link">
+        The Critical Engineering Manifesto (CE Working Group, 2011-2014)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2014-03-balconism/" class="md-nav__link">
+        Balconism (2014)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2014-10-cybertwee/" class="md-nav__link">
+        the cybertwee manifesto (2014)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy/" class="md-nav__link">
+        A Privacy Engineer's Manifesto (2014)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2015-art-after-failure/" class="md-nav__link">
+        Art After Failure (2015)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2015-01-21-Critical-Interface-Manifesto/" class="md-nav__link">
+        Critical Interface Manifesto Work in Progress (2015)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2015newclues/" class="md-nav__link">
+        New Clues (Searls and Weinberger, 2015)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../happy-hacking/" class="md-nav__link">
+        Happy Hacking Manifesto (2015)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../anti-sec/" class="md-nav__link">
+        Anti-Sec Manifesto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The Underground Myth (Published in Phrack)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        The Underground Myth (Published in Phrack)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hackers-myth" class="md-nav__link">
+    Hacker's Myth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-security-industry" class="md-nav__link">
+    The Security Industry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black-hat-two-faces" class="md-nav__link">
+    Black Hat, Two Faces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology" class="md-nav__link">
+    Technology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criminals" class="md-nav__link">
+    Criminals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forgotten-youth" class="md-nav__link">
+    Forgotten Youth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-forward-link" class="md-nav__link">
+    The Forward Link
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wark/" class="md-nav__link">
+        A Hacker Manifesto [Version 4.0] (McKenzie Wark)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cybercommunist/" class="md-nav__link">
+        <THE::CYBER.COM/MUNIST::MANIFESTO\> (Richard Barbrook)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authors/" class="md-nav__link">
+        Authors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../additional/" class="md-nav__link">
+        Additional Resources
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hackers-myth" class="md-nav__link">
+    Hacker's Myth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-security-industry" class="md-nav__link">
+    The Security Industry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black-hat-two-faces" class="md-nav__link">
+    Black Hat, Two Faces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technology" class="md-nav__link">
+    Technology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criminals" class="md-nav__link">
+    Criminals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forgotten-youth" class="md-nav__link">
+    Forgotten Youth
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-forward-link" class="md-nav__link">
+    The Forward Link
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  
+
+
+
+<h1 id="the-underground-myth-published-in-phrack">The Underground Myth (Published in Phrack)</h1>
+<p>.-Phrack Inc..-=====================</p>
+<p>Volume 0x0c, Issue 0x41, Phile .0x0d of 0x0f:</p>
+<pre><code>|=-----------------------------------------------------------------------=|
+|=-----------------------=[ The Underground Myth ]=----------------------=|
+|=-----------------------------------------------------------------------=|
+|=---------------------------=[ By Anonymous ]=--------------------------=|
+|=-----------------------------------------------------------------------=|
+</code></pre>
+<h2 id="hackers-myth">Hacker's Myth</h2>
+<p>This is a statement on the fate of the modern underground. There will be
+none of the nostalgia, melodrama, black hat rhetoric or white hat
+over-analysis that normally accompanies such writing.</p>
+<p>Since the early sixties there has been just one continuous hacking
+scene. From phreaking to hacking, people came and went, explosions of
+activity, various geographical shifts of influence. But although the
+scene seemed to constantly redefine itself in the ebb and flow of
+technology, it always had a direct lineage to the past, with similar
+traditions, culture and spirit.</p>
+<p>In the past few years this connection has been completely severed.</p>
+<p>And so there's very little point in writing about what the underground
+used to be; leave that to the historians. Very little point writing
+about what should be done to make everything good again; leave that to
+the dreamers and idealists. Instead I'm going to lay down some cold
+hard facts about the way things are now, and more importantly, how they
+came to be this way.</p>
+<p>This is the story of how the underground died.</p>
+<h2 id="the-security-industry">The Security Industry</h2>
+<blockquote>
+<p>Then in the U.S. music scene there was big changes made Due to
+circumstances beyond our control... such as payola The rock n roll
+scene died after two years of solid rock - The Animals, circa 1964</p>
+</blockquote>
+<p>There is little doubt that the explosion of the security industry has
+directly coincided with the decline of the hacking scene. The hackers of
+the eighties and nineties became the security professionals of the new
+millennium, and the community suffered for it.</p>
+<p>The fact is that hackers, mostly on an individual basis, decided to use
+their passion as a source of income. Whether this is good, bad, or just
+pragmatic is completely irrelevant. Nearly all the hackers that could
+get jobs did. For the individuals that decision has been made (for
+better or worse), and in general there's nothing that will change this.</p>
+<p>This was a hacker exodus. What really mattered was not the loss of any
+individuals, but the cumulative effect this had on the underground. The
+more hackers that left the underground for a corporate life, the fewer
+that came in. And those who stayed became entrenched, increasingly
+disconnected.</p>
+<p>Collaboration in this new age of career hackers has all but ceased to
+exist. Individuals are now obsessed with credit. For their career, for
+their standing in the community, it must be absolutely clear who this
+research, this vulnerability, or even this opinion belongs to.</p>
+<p>There is no trust in this corporate community; an underground issue
+greatly amplified by corporate motivations. A single person can go
+months or even years without telling anyone exactly what he is working
+on, and whats more, will be genuinely worried about someone
+"publishing" their results before him. There is no respect for the
+information he holds, no belief that information should be free, no
+belief that research should be open. All that matters is credit; all
+that matters is fame and money, their career.</p>
+<p>This is purely the fault of the security industry, who has exploited and
+cultivated this culture, designed it for their needs. The truly sad
+thing is that the corporate security world hasn't realized that they
+are sitting on a gold mine, and as a result the mine is likely to
+collapse; and likely to take their industry down with it.</p>
+<p>The security industry uses information as its sole commodity,
+information about insecurity. Who has the information, and who doesn't
+is what makes this economy work. Whats more, the economy has been
+founded on the continued output of a finite group of hackers. For the
+most part, founded on those hackers that came out of the underground
+scene at their technical prime.</p>
+<p>But these hackers are not going to continue their production
+indefinitely. They will lose their technical edge, move on to other
+industries, perhaps climb the ladder up to management, and then retire.
+The question is, then what? Then it will be up to the new wave of young
+security professionals, whose motivation is as much financial as it is
+passion for the technology and the thrill of the hacking game.</p>
+<p>To imagine that these new wave office workers, university trained and
+disinterested, can match the creative output of a genuine hacker is
+laughable. The industry will stagnate under these conditions. The rapid
+technical advancement we have seen will end, no more breakthroughs: no
+more new security products or services. Just the same old techniques
+being rehashed again and again until the rock has been bled dry.</p>
+<p>I am trying to show you the symbiotic nature of the security industry
+and the hacking scene. Industry needs insecurity to survive, there is no
+doubt about this. A secure and stable Internet is not profitable for
+long. Hackers provided instability, change, chaos. So the industry
+became a parasite on the hacking scene, devouring the talent pool
+without giving anything back, not thinking of what will happen when
+there are no more hackers to consume.</p>
+<p>For this reason, the security industry, much like the hacker
+underground, is doomed, perhaps even destined for failure. But for now,
+all that matters is that we have a thriving industry and...</p>
+<p>A hacker underground proclaimed to be dead.</p>
+<h2 id="black-hat-two-faces">Black Hat, Two Faces</h2>
+<p>It would be easy to lay the blame squarely on the shoulders of the
+security industry. A lot of people have. Unfortunately, its not that
+simple. Perhaps the underground could have survived without the lure of
+a six figure job, but one thing should be made clear. The
+self-proclaimed black hat movement does nothing to help.</p>
+<p>Various black hat groups have claimed to be the voice of the
+underground, but the black hat scene was only ever a pale imitation of
+the actual underground. The underground wasn't at all interested in
+public self-aggrandizement, but this is all the black hats ever did. All
+that their various rants and escapades accomplished was to show how
+desperate they actually were for fame and recognition.</p>
+<p>But whats worse, while they often talk a big game, they very rarely have
+the pedigree to back it up. This is mostly because these self-proclaimed
+black hats are really just as self-serving as the white hats they
+pretend to detest. With few exceptions, those black hats that aren't
+already working in the security industry are those that don't have the
+skills to cut it.</p>
+<p>The entire anti-security theme was simply embarrassing. This was just
+the black hat movement admitting that they couldn't step up and
+represent in an increasingly technical world. Where once hacking skill
+commanded respect, now the black hats were promoting misinformation in
+order to make what few hacks they managed to pull off easier. They
+couldn't step up to a challenge, they couldn't outsmart the white hats
+they so detest.</p>
+<p>This ineptitude and misguided fervor of the black hat scene had a
+massive negative impact on the hacking underground. The true voice of
+the underground was lost behind the noise and drama, until the voice
+became a whisper.</p>
+<p>And then eventually fell silent.</p>
+<h2 id="technology">Technology</h2>
+<p>The very nature of technology, a dynamic and intractable force, had a
+lot to say in the demise of the hacking world. In many cases, if a black
+hat had been active 5 or 10 years earlier they would have been
+technically competent and may well have contributed significantly. This
+is because with the utmost respect, and despite all the nostalgia,
+hackers of the past had it easy.</p>
+<p>In the early years, the problems hackers faced were largely related to
+the availability of information. Isolated groups of people had their
+tricks and techniques, and sharing this information was problematic.
+This is in direct contrast with the situation today, where there is an
+excess of information but a void of quality.</p>
+<p>As a result of many differing factors, the world is becoming aware of
+the threats posed by lax security. When there is money at risk, steps
+will be taken to protect those assets. We see now an increasing move
+towards technical security mechanisms being employed as part of a
+defense in depth strategy, and as a result, to be a hacker today
+requires immense technical ability in a broad range of disciplines. It
+takes years of individual study to reach this level.</p>
+<p>But unfortunately, fewer and fewer people are willing, or indeed capable
+of following this path, of pursuing that ever-unattainable goal of
+technical perfection. Instead, the current trend is to pursue the lowest
+common denominator, to do the least amount of work to gain the most
+fame, respect or money.</p>
+<p>There has also been an increasingly narrow range in what is published.
+In part this is because of the lack of accessibility of certain systems
+(through obscurity or price), but this is also increasingly dictated by
+fashion. In a desire to fit in with the community, to be accepted in to
+conferences, to be seen doing the right things in the right places with
+the right people, researchers are all too happy to slot in to this
+pattern of predictable and narrow progress.</p>
+<p>And even then, the standards of what makes acceptable research, or for
+what makes a vulnerability interesting, drops with every year. The gap
+between offensive research and defensive implementations continues to
+grow, to the point where public vulnerability research has become a
+parody of what it once was, a type of inside joke.</p>
+<p>There is no creativity, no sense of arcana anymore.</p>
+<h2 id="criminals">Criminals</h2>
+<p>From Operation Sundevil to cyber terrorism. The criminalization of
+computer hacking and, by association, computer hackers had a devastating
+impact on the underground. Hacking was criminalized in two ways, both of
+near equal importance: by legislation of computer crimes, and by the new
+trend of genuine criminals using hacking as a method for fraud.</p>
+<p>There should be a clear separation between these two things. The fact
+that the underground collectively became criminals under the law for
+what they had been doing for, in some cases, decades. And the fact that
+in public perception, even among professionals that should know better,
+there was very little distinction between a genuine hacker and those
+criminals using hacking purely as a method for profit.</p>
+<p>Indeed, little of what organized crime and terrorist/activist groups are
+doing could justifiably be labeled hacking. It is simply convenient to
+make this simplification, in media and in industry. The security
+industry knows the difference, but they have no economic interest in
+there being any clarity on this point. Any sort of hacking, anything
+they can sensationalize enough to scare their profit margin up suits
+them perfectly.</p>
+<p>For the underground, these issues largely affected individuals, not the
+broader structure of things. Each person had to make a personal decision
+on whether it was worth 1) being seen as a criminal under the law and 2)
+being seen as a criminal in public perception. Why should the hacker
+face this when such an easy, safe, respectable alternative is available
+in the security industry?</p>
+<p>Even the term black hat has been twisted into something more closely
+aligned to organized crime. For all their faults, black hats were not
+(in theory) motivated by this type of money.</p>
+<p>It comes down to an aging hacking population deciding, on an individual
+basis, to settle down with their families, their material possessions,
+their careers. No one can argue that there is anything wrong with this.
+It is just a fact that these hackers left the scene behind.</p>
+<p>Leaving a void too large to be filled.</p>
+<h2 id="forgotten-youth">Forgotten Youth</h2>
+<p>The forgotten aspect of this whole story is, without doubt, the
+importance of new talent entering the world of hacking. Historically,
+hacking has belonged to the young. With every passing year, the average
+age of hackers collectively increases. Some would claim this is a sign
+of a maturing discipline. For surely, what could youth possibly
+contribute in this technological landscape? They call them kids, dismiss
+them as irrelevant.</p>
+<p>Despite all of the issues facing the underground, if hackers had managed
+to get this one aspect right, if they had recognized the importance of
+those who would come after them, if they had given them something to
+aspire to be, if they had directly or indirectly taught them the
+accumulated wisdom that so often separates a hacker from the crowd; then
+perhaps there still would be a hacker underground.</p>
+<p>Nearly all of the situations surrounding the disestablishment of the
+underground were circumstantial, there was nobody to blame, and nothing
+that could be done. But one point for which this was not true was the
+underground's obligations to young hackers. An entire generation of
+talented hackers have lost the opportunity to become a part of something
+bigger than themselves by participating in a functioning hacking
+community, simply because hackers were too self-absorbed to notice.</p>
+<p>The decline of the underground scene happened relatively quickly, and
+also relatively quietly. The hacker who left the underground behind for
+his new life was unlikely to justify or explain his choices. In fact it
+was more likely he would deny being changed at all. It's likely he'd
+even continue to have contact with his fellow ex-hackers, in some
+imitation of the underground scene. This only helped to obscure what was
+actually happening.</p>
+<p>Today's youth, for the most part, have no true understanding of hackers
+or hacking. They have no knowledge of the history, no knowledge that a
+history even exists. Their hacker is the media's hacker, the cyber
+terrorist, the Russian mafia. This is unfortunate, but the real trouble
+begins for those few that somehow become interested enough to look a bit
+deeper.</p>
+<p>The average person requires some form of role model, something to aspire
+to, to imitate and to an extent, to idolize. At this time, the only
+visible efforts were the white hat researchers, the black hat horde or
+various other technically inept self-proclaimed 'experts'. There is so
+little inspiring research, and even less inspiring hacking, that anyone
+new to the world of hacking is almost invariably left with a skewed
+impression of things.</p>
+<p>Indeed, for a lot of the young people that managed to acquire the
+necessary technical base, hacking was seen as simply an interesting
+career path. There is no passion in these people, no motivation to
+extend and create. A competent professional, valued employee.</p>
+<p>But no longer a hacker.</p>
+<h2 id="the-forward-link">The Forward Link</h2>
+<p>The hacker underground has been systematically dismantled, a victim of
+circumstance. There was no reason for this, no conspiracy, no winner. A
+conquered people, but with no conqueror, no enemy to fight. No chance of
+rebellion. Conquered by circumstance, if not fate.</p>
+<p>At first this would seem to be a bleak message. What is the point of
+even trying anymore? Why practice a dead art? But the truth is that the
+art is not dead, just the circle that brought the artists together. The
+hacker underground is broken, but the hackers are not.</p>
+<p>Casualties have been high; but there still exists a scattered,
+marginalized, and misrepresented people who are the hackers. Hackers,
+not black hat nor white, not professionals, not amateurs (surely none of
+this matters), are still out there in this world today, still with all
+the potential to be something great.</p>
+<p>The question is not then how to artificially group these people into a
+new underground movement. The question is not how to mourn the passing
+of the golden days, how to keep the memories alive. There are no
+questions of this sort, no problems that can be solved or corrected by
+individual action.</p>
+<p>All that remains is to relax, to do what you enjoy doing; to hack purely
+for the enjoyment of doing so. The rest will come naturally, a new
+scene, with its own traditions, culture and history. A new underground,
+organically formed over time, just like the first, out of the hacker's
+natural inclination to share and explore.</p>
+<p>It will take time, and there will be difficulties. Some will not be able
+to let go of the past, and some will fail for not remembering it. But in
+the end, after everything has been said and done, the equilibrium will
+be restored.</p>
+<p>A new world, at the frontier of cyberspace, belonging to the hackers by
+right.</p>
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../anti-sec/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Anti-Sec Manifesto" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Anti-Sec Manifesto
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../wark/" class="md-footer__link md-footer__link--next" aria-label="Next: A Hacker Manifesto [Version 4.0] (McKenzie Wark)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              A Hacker Manifesto [Version 4.0] (McKenzie Wark)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      
+    
+  </body>
+</html>
