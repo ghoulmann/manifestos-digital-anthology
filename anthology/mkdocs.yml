@@ -4,7 +4,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - logo: assets/logo.png
+  favicon: assets/logo.png
 plugins:
   - search:
       lang: en
