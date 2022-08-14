@@ -5,6 +5,7 @@ theme:
     - navigation.instant
     - navigation.tracking
   favicon: assets/logo.png
+  logo: assetys/logo.png
 plugins:
   - search:
       lang: en
