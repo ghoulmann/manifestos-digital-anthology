@@ -1,3 +1,13 @@
+---
+tags:
+  - media
+  - digital media
+  - electronic media
+  - movement-time-space
+  - art
+  - destruction
+---
+
 # Manifesto for the Unstable Media
 
 We strive for constant change; for mobility.

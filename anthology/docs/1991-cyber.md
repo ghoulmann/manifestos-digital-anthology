@@ -1,5 +1,13 @@
-CYBERFEMINIST MANIFESTO FOR THE 21ST CENTURY (VNS Matrix, 1991)
-===============================================================
+---
+tags:
+  - 1991
+  - feminism
+  - VNS Matrix
+  - jouissance
+  - Australia
+---
+
+# CYBERFEMINIST MANIFESTO FOR THE 21ST CENTURY (VNS Matrix, 1991)
 
 We are the modern cunt
 

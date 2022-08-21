@@ -1,3 +1,11 @@
+---
+tags:
+  - free software
+  - GNU
+  - Richard Stallman
+  - Stallman, Richard
+---
+
 # The GNU Manifesto
 
 > The GNU Manifesto (which appears below) was written by Richard Stallman at the beginning of the GNU Project, to ask for participation and support. For the first few years, it was updated in minor ways to account for developments, but now it seems best to leave it unchanged as most people have seen it.

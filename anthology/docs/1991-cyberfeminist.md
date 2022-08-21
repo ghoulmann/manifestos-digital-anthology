@@ -1,3 +1,12 @@
+---
+tags:
+  - 1991
+  - feminism
+  - VNS Matrix
+  - jouissance
+  - Australia
+---
+
 # Cyberfeminist Manifesto for the 21st Century
 
 We are the modern cunt
